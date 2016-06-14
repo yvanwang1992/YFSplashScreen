@@ -1,0 +1,365 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8404A6AB1D0FAFD5009307C8 /* logo_about120.png in Resources */ = {isa = PBXBuildFile; fileRef = 8404A6A41D0FAFD5009307C8 /* logo_about120.png */; };
+		8404A6AC1D0FAFD5009307C8 /* logo_about180.png in Resources */ = {isa = PBXBuildFile; fileRef = 8404A6A51D0FAFD5009307C8 /* logo_about180.png */; };
+		8404A6BC1D0FD63C009307C8 /* Default-568@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8404A6B71D0FD63C009307C8 /* Default-568@2x.png */; };
+		8404A6BD1D0FD63C009307C8 /* Default-667@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8404A6B81D0FD63C009307C8 /* Default-667@2x.png */; };
+		8404A6BE1D0FD63C009307C8 /* Default-736@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8404A6B91D0FD63C009307C8 /* Default-736@3x.png */; };
+		8404A6BF1D0FD63C009307C8 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8404A6BA1D0FD63C009307C8 /* Default.png */; };
+		8404A6C01D0FD63C009307C8 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8404A6BB1D0FD63C009307C8 /* Default@2x.png */; };
+		8404A6C21D0FE303009307C8 /* defaultImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 8404A6C11D0FE303009307C8 /* defaultImage.png */; };
+		8432C3891D002EE000B88DFE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8432C3881D002EE000B88DFE /* main.m */; };
+		8432C38C1D002EE000B88DFE /* YFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8432C38B1D002EE000B88DFE /* YFAppDelegate.m */; };
+		8432C38F1D002EE000B88DFE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8432C38E1D002EE000B88DFE /* ViewController.m */; };
+		8432C3951D002EE000B88DFE /* YFSplashScreen.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8432C3931D002EE000B88DFE /* YFSplashScreen.xcdatamodeld */; };
+		8432C3971D002EE000B88DFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8432C3961D002EE000B88DFE /* Assets.xcassets */; };
+		8432C3A81D003DB700B88DFE /* YFSplashScreenView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8432C3A71D003DB700B88DFE /* YFSplashScreenView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8404A6A41D0FAFD5009307C8 /* logo_about120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_about120.png; sourceTree = "<group>"; };
+		8404A6A51D0FAFD5009307C8 /* logo_about180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_about180.png; sourceTree = "<group>"; };
+		8404A6B71D0FD63C009307C8 /* Default-568@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568@2x.png"; sourceTree = "<group>"; };
+		8404A6B81D0FD63C009307C8 /* Default-667@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667@2x.png"; sourceTree = "<group>"; };
+		8404A6B91D0FD63C009307C8 /* Default-736@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736@3x.png"; sourceTree = "<group>"; };
+		8404A6BA1D0FD63C009307C8 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		8404A6BB1D0FD63C009307C8 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		8404A6C11D0FE303009307C8 /* defaultImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaultImage.png; sourceTree = "<group>"; };
+		8432C3841D002EE000B88DFE /* YFSplashScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YFSplashScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8432C3881D002EE000B88DFE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8432C38A1D002EE000B88DFE /* YFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YFAppDelegate.h; sourceTree = "<group>"; };
+		8432C38B1D002EE000B88DFE /* YFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFAppDelegate.m; sourceTree = "<group>"; };
+		8432C38D1D002EE000B88DFE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8432C38E1D002EE000B88DFE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8432C3941D002EE000B88DFE /* YFSplashScreen.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = YFSplashScreen.xcdatamodel; sourceTree = "<group>"; };
+		8432C3961D002EE000B88DFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8432C39B1D002EE000B88DFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8432C3A61D003DB700B88DFE /* YFSplashScreenView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFSplashScreenView.h; sourceTree = "<group>"; };
+		8432C3A71D003DB700B88DFE /* YFSplashScreenView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFSplashScreenView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8432C3811D002EE000B88DFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8404A69E1D0FAFC6009307C8 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				8404A6C11D0FE303009307C8 /* defaultImage.png */,
+				8404A6B71D0FD63C009307C8 /* Default-568@2x.png */,
+				8404A6B81D0FD63C009307C8 /* Default-667@2x.png */,
+				8404A6B91D0FD63C009307C8 /* Default-736@3x.png */,
+				8404A6BA1D0FD63C009307C8 /* Default.png */,
+				8404A6BB1D0FD63C009307C8 /* Default@2x.png */,
+				8404A6A41D0FAFD5009307C8 /* logo_about120.png */,
+				8404A6A51D0FAFD5009307C8 /* logo_about180.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		8432C37B1D002EE000B88DFE = {
+			isa = PBXGroup;
+			children = (
+				8432C3861D002EE000B88DFE /* YFSplashScreen */,
+				8432C3851D002EE000B88DFE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8432C3851D002EE000B88DFE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8432C3841D002EE000B88DFE /* YFSplashScreen.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8432C3861D002EE000B88DFE /* YFSplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				8404A69E1D0FAFC6009307C8 /* Images */,
+				8432C3A11D002EFE00B88DFE /* YFSplashScreen */,
+				8432C38A1D002EE000B88DFE /* YFAppDelegate.h */,
+				8432C38B1D002EE000B88DFE /* YFAppDelegate.m */,
+				8432C38D1D002EE000B88DFE /* ViewController.h */,
+				8432C38E1D002EE000B88DFE /* ViewController.m */,
+				8432C3961D002EE000B88DFE /* Assets.xcassets */,
+				8432C39B1D002EE000B88DFE /* Info.plist */,
+				8432C3931D002EE000B88DFE /* YFSplashScreen.xcdatamodeld */,
+				8432C3871D002EE000B88DFE /* Supporting Files */,
+			);
+			path = YFSplashScreen;
+			sourceTree = "<group>";
+		};
+		8432C3871D002EE000B88DFE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8432C3881D002EE000B88DFE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8432C3A11D002EFE00B88DFE /* YFSplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				8432C3A61D003DB700B88DFE /* YFSplashScreenView.h */,
+				8432C3A71D003DB700B88DFE /* YFSplashScreenView.m */,
+			);
+			path = YFSplashScreen;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8432C3831D002EE000B88DFE /* YFSplashScreen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8432C39E1D002EE000B88DFE /* Build configuration list for PBXNativeTarget "YFSplashScreen" */;
+			buildPhases = (
+				8432C3801D002EE000B88DFE /* Sources */,
+				8432C3811D002EE000B88DFE /* Frameworks */,
+				8432C3821D002EE000B88DFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YFSplashScreen;
+			productName = YFSplashScreen;
+			productReference = 8432C3841D002EE000B88DFE /* YFSplashScreen.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8432C37C1D002EE000B88DFE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Yvan Wang";
+				TargetAttributes = {
+					8432C3831D002EE000B88DFE = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = SRZVF38BJ4;
+					};
+				};
+			};
+			buildConfigurationList = 8432C37F1D002EE000B88DFE /* Build configuration list for PBXProject "YFSplashScreen" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8432C37B1D002EE000B88DFE;
+			productRefGroup = 8432C3851D002EE000B88DFE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8432C3831D002EE000B88DFE /* YFSplashScreen */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8432C3821D002EE000B88DFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8404A6C01D0FD63C009307C8 /* Default@2x.png in Resources */,
+				8404A6BC1D0FD63C009307C8 /* Default-568@2x.png in Resources */,
+				8404A6AC1D0FAFD5009307C8 /* logo_about180.png in Resources */,
+				8404A6BE1D0FD63C009307C8 /* Default-736@3x.png in Resources */,
+				8404A6AB1D0FAFD5009307C8 /* logo_about120.png in Resources */,
+				8404A6BF1D0FD63C009307C8 /* Default.png in Resources */,
+				8404A6BD1D0FD63C009307C8 /* Default-667@2x.png in Resources */,
+				8404A6C21D0FE303009307C8 /* defaultImage.png in Resources */,
+				8432C3971D002EE000B88DFE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8432C3801D002EE000B88DFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8432C38F1D002EE000B88DFE /* ViewController.m in Sources */,
+				8432C3951D002EE000B88DFE /* YFSplashScreen.xcdatamodeld in Sources */,
+				8432C3A81D003DB700B88DFE /* YFSplashScreenView.m in Sources */,
+				8432C38C1D002EE000B88DFE /* YFAppDelegate.m in Sources */,
+				8432C3891D002EE000B88DFE /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8432C39C1D002EE000B88DFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8432C39D1D002EE000B88DFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8432C39F1D002EE000B88DFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = YFSplashScreen/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = WYF.YFSplashScreen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8432C3A01D002EE000B88DFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = YFSplashScreen/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = WYF.YFSplashScreen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8432C37F1D002EE000B88DFE /* Build configuration list for PBXProject "YFSplashScreen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8432C39C1D002EE000B88DFE /* Debug */,
+				8432C39D1D002EE000B88DFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8432C39E1D002EE000B88DFE /* Build configuration list for PBXNativeTarget "YFSplashScreen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8432C39F1D002EE000B88DFE /* Debug */,
+				8432C3A01D002EE000B88DFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8432C3931D002EE000B88DFE /* YFSplashScreen.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8432C3941D002EE000B88DFE /* YFSplashScreen.xcdatamodel */,
+			);
+			currentVersion = 8432C3941D002EE000B88DFE /* YFSplashScreen.xcdatamodel */;
+			path = YFSplashScreen.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8432C37C1D002EE000B88DFE /* Project object */;
+}

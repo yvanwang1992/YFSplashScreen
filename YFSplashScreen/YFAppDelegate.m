@@ -18,7 +18,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-
+    
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     ViewController *mainVC = [[ViewController alloc] init];
     
@@ -26,14 +26,13 @@
     [self.window makeKeyAndVisible];
     
     
-    
-    self.splashScreenView = [[YFSplashScreenView alloc] initWithFrame:self.window.bounds defaultImage:[UIImage imageNamed:@"defaultImage"]];
+    self.splashScreenView = [[YFSplashScreenView alloc] initWithFrame:self.window.bounds defaultImage:[UIImage imageNamed:@"defaultStartScreen"]];
     [self.window addSubview:self.splashScreenView];
     self.splashScreenView.animationStartBlock = ^void(){
-        NSLog(@"开始动画......");
+        NSLog(@"Animation Start......");
     };
     self.splashScreenView.animationCompletedBlock = ^void(){
-        NSLog(@"结束动画......");
+        NSLog(@"Animation Completed......");
     };
 
     return YES;

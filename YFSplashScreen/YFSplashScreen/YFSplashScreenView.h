@@ -9,16 +9,14 @@
 #import <UIKit/UIKit.h>
 #import <CommonCrypto/CommonDigest.h>
 
-typedef void(^AnimationCompletedBlock)();
-typedef void(^AnimationStartBlock)();
+typedef void(^AnimationBlock)();
 
 @interface YFSplashScreenView : UIView
 
-@property (nonatomic, assign) AnimationCompletedBlock animationCompletedBlock;
-@property (nonatomic, assign) AnimationStartBlock animationStartBlock;
+@property (nonatomic, assign) AnimationBlock animationCompletedBlock;
+@property (nonatomic, assign) AnimationBlock animationStartBlock;
 
-//可以自定义动画
-//也可以执行某些事情  //让用户自己移除本页面
+
 -(instancetype)initWithFrame:(CGRect)frame
                 defaultImage:(UIImage *)defaultImage;
 

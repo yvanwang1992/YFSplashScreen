@@ -43,25 +43,24 @@
     NSString *imageName = [self getCurrentLaunchImageNameForOrientation:orientation];
     self.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:imageName]];
     
-    //图片
+    //Add Animatable UIImageView
     self.imageView = [[UIImageView alloc] initWithFrame:self.bounds];
     self.imageView.contentMode = UIViewContentModeScaleToFill;
     self.imageView.alpha = 0;
     [self addSubview:self.imageView];
     
-    
-    //以下logo和应用名称  是为了保持和启动画面一致
-    //Logo   需要根据这里的位置来做图呀！！！！！
+
+    //The Location of Logo and Name is the same as the Current LaunchScreen's
+    //add App Logo
     CGFloat loginWidth = self.bounds.size.width / 6;
     CGFloat loginHeight = loginWidth;
     CGFloat loginX = (self.bounds.size.width - loginWidth) / 2;
     CGFloat loginY = self.bounds.size.height / 7;
-    
     UIImageView *logoView = [[UIImageView alloc]initWithFrame:CGRectMake(loginX,loginY, loginWidth, loginHeight)];
-    logoView.image = [UIImage imageNamed:@"logo_about180"];
+    logoView.image = [UIImage imageNamed:@"logo.png"];
     [self addSubview:logoView];
 
-    //应用名称
+    //add App Name
     NSString *appName = @"抽屉新热榜";//[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleDisplayName"];
     CGSize nameLabelSize = [appName sizeWithAttributes: @{
                         NSFontAttributeName:[UIFont systemFontOfSize:15]}];
@@ -96,7 +95,7 @@
         [UIView animateWithDuration:duration + 0.5 animations:^{
             self.imageView.transform = CGAffineTransformIdentity;
         } completion:^(BOOL finished) {
-            //移除
+            //Remove
             [self removeFromSuperview];
             if(_animationCompletedBlock){
                 _animationCompletedBlock();
@@ -106,7 +105,7 @@
 }
 
 -(void)setImage:(NSString *)imageUrl{
-    if(imageUrl == nil) NSLog(@"未设置图片");
+    if(imageUrl == nil) return;
     self.imageUrl = imageUrl;
     [self createHttpRequestForImage:imageUrl];
 }
@@ -122,7 +121,7 @@
 
 -(NSString *)pathToSave{
     
-    //获取沙盒中的Documents文件路径
+    //get Documents Path
     NSString  *libraryPath = [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) objectAtIndex:0];
     NSString *path = [libraryPath stringByAppendingPathComponent:kImagesSavedFolder];
     
@@ -132,7 +131,6 @@
 
 #pragma -m NSURLSessionDownloadDelegate
 
-//完成后
 - (void)URLSession:(NSURLSession *)session downloadTask:(NSURLSessionDownloadTask *)downloadTask
 didFinishDownloadingToURL:(NSURL *)location{
     
@@ -142,33 +140,35 @@ didFinishDownloadingToURL:(NSURL *)location{
     
     [fileManager moveItemAtURL:location toURL:[NSURL fileURLWithPath:path] error:nil];
 
-    NSLog(@"下载成功");
+    NSLog(@"Download Success!");
     
     [session invalidateAndCancel];
 }
 
-//进度
-- (void)URLSession:(NSURLSession *)session downloadTask:(NSURLSessionDownloadTask *)downloadTask
-      didWriteData:(int64_t)bytesWritten
- totalBytesWritten:(int64_t)totalBytesWritten
-totalBytesExpectedToWrite:(int64_t)totalBytesExpectedToWrite{
-
-}
-
-//调用resumedData方法
-- (void)URLSession:(NSURLSession *)session downloadTask:(NSURLSessionDownloadTask *)downloadTask
- didResumeAtOffset:(int64_t)fileOffset
-expectedTotalBytes:(int64_t)expectedTotalBytes{
-
-}
+//- (void)URLSession:(NSURLSession *)session downloadTask:(NSURLSessionDownloadTask *)downloadTask
+//      didWriteData:(int64_t)bytesWritten
+// totalBytesWritten:(int64_t)totalBytesWritten
+//totalBytesExpectedToWrite:(int64_t)totalBytesExpectedToWrite{
+//
+//}
+//
+//- (void)URLSession:(NSURLSession *)session downloadTask:(NSURLSessionDownloadTask *)downloadTask
+// didResumeAtOffset:(int64_t)fileOffset
+//expectedTotalBytes:(int64_t)expectedTotalBytes{
+//
+//}
 
 -(void)clearImageSavedFolder{
     NSError *error;
     [fileManager removeItemAtPath:[self pathToSave] error:&error];
-    NSLog(@"已清空");
+    NSLog(@"The Folder is already Cleared");
 }
- 
 
+
+//["UILaunchImageMinimumOSVersion"] = "8.0",
+//["UILaunchImageName"] = ""LaunchImage-800-Portrait-736h",
+//["UILaunchImageOrientation"] = "Portrait",
+//["UILaunchImageSize"] = "{414, 736}"
 -(NSString *)getCurrentLaunchImageNameForOrientation:(UIInterfaceOrientation)orientation{
     NSString *currentImageName = nil;
 

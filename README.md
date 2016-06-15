@@ -40,5 +40,5 @@ NSLog(@"Animation Completed......");<p/>
 };
 
 ####5.notice:<p/>
-1.All the portrait LaunchScreen Images are provided in path /Images/Resources/.
+1.All the portrait LaunchScreen Images can be seen in path ~./Assets.xcassets/LaunchImage.launchimage/
 2.if you wanna make your own LaunchScreen Images, Please make sure that The Location of Top Views is the same as the Current LaunchScreen's.

@@ -47,7 +47,7 @@
     NSInteger tag = button.tag;
     switch (tag - 100) {
         case 0:
-            [splashScreenView setImage:@"http://img.pconline.com.cn/images/upload/upc/tx/wallpaper/1603/18/c2/19342216_1458277734284_320x480.jpg"];
+            [splashScreenView setImage:@"http://imgsrc.baidu.com/forum/w%3D580/sign=e2d1a4d359b5c9ea62f303ebe538b622/f2abaa51f3deb48f5a1e3306f21f3a292cf57840.jpg"];
             break;
         case 1:
             [splashScreenView setImage:@"http://img8.zol.com.cn/bbs/upload/20285/20284459.jpg"];

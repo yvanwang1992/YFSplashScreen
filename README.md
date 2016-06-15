@@ -1,5 +1,7 @@
 # YFSplashScreen
-splash screen just like the app : drawer
+YFSplashScreen is a Dynamic SplashScreen just like the APP : 
+["抽屉新热榜"](https://www.microsoft.com/zh-cn/store/phoneappid/b8e9f94d-c1cd-4317-9eef-a9494585b40a/)<p/>
+if you set image using url in the app, the next time when the app starting, the image will be shown with animation.
 
 [博客园记录: 【IOS】模仿"抽屉新热榜"动态启动页](http://www.cnblogs.com/yffswyf/p/5585157.html) 
 
@@ -15,7 +17,8 @@ splash screen just like the app : drawer
 
 ####2.Initialization:<p/>
 
-YFSplashScreenView *splashScreenView = [[YFSplashScreenView alloc] initWithFrame:self.window.bounds defaultImage:[UIImage imageNamed:@"defaultStartScreen"]];
+YFSplashScreenView *splashScreenView = [[YFSplashScreenView alloc] initWithFrame:self.window.bounds 
+                <p/>defaultImage:[UIImage imageNamed:@"defaultStartScreen"]];
 
 if you don't want defaultImage,just set it nil.
 
@@ -27,13 +30,13 @@ if you don't want defaultImage,just set it nil.
 -(void)clearImageSavedFolder;
 
 ####4.block:<p/> 
-//When the Animation is Started.
-splashScreenView.animationStartBlock = ^void(){
-NSLog(@"Animation Start......");
-};
-//When the Animation is Completed.
-splashScreenView.animationCompletedBlock = ^void(){
-NSLog(@"Animation Completed......");
+//When the Animation is Started.<p/>
+splashScreenView.animationStartBlock = ^void(){<p/>
+NSLog(@"Animation Start......");<p/>
+};<p/>
+//When the Animation is Completed.<p/>
+splashScreenView.animationCompletedBlock = ^void(){<p/>
+NSLog(@"Animation Completed......");<p/>
 };
 
 ####5.notice:<p/>
